@@ -89,7 +89,7 @@
 <body>
 
 <header>
-    <h1>Unveiling Acoustic Biomarkers for Dysarthria: A Framework using Generative Augmentation and Self-Supervised Representations</h1>
+    <h1>Assessing Dysarthric Speech Intelligibility via Generative Augmentation and Self-Supervised Linguistic Representations</h1>
     <p class="authors">Davide Lillini, Carlo Aironi, Lucia Migliorelli, Leonardo Gabrielli and Stefano Squartini</p>
 </header>
 
@@ -97,23 +97,24 @@
     <h2>Abstract</h2>
     <div class="abstract">
         The development of robust automated systems for
-        speech-based dysarthria assessment is currently hindered by
-        the scarcity of high-quality labeled pathological datasets. This
-        study proposes a novel framework to address this limitation by
-        integrating self-supervised learning with generative data augmen-
-        tation. The methodology employs StyleTTS 2, a diffusion-based
+        speech-based intelligibility (and, thus, dysarthria) assessment
+        is currently hindered by the scarcity of labeled pathological
+        datasets. This study proposes a novel framework to address this
+        limitation by integrating self-supervised learning with generative
+        data augmentation. we employ StyleTTS-2, a diffusion-based
         generative model to generate synthetic dysarthric speech samples,
-        conditioned on reference audio from the TORGO database
-        and text prompts from the UA-Speech corpus. In parallel,
-        Wav2Vec 2.0 is specifically employed to extract and analyse
-        contextualized representations aligned with character targets and
-        phoneme labels, systematically identifying which linguistic targets
-        serve as the most effective biomarkers for binary intelligibility
-        classification. To quantify the impact of the generated samples,
-        an Augmentation Efficiency Index (AEI) is also introduced.
-        Experimental results demonstrate that relying on contextualised
-        representations yields superior classification accuracy compared
-        to processing raw audio waveforms. Furthermore, the inclusion
+        conditioned on reference audio from the TORGO dataset and text
+        prompts from the UA-Speech dataset. Wav2Vec 2.0 is specifically
+        employed to extract and analyse contextualized representations
+        aligned with character targets and phoneme labels, systematically
+        identifying which linguistic targets serve as the most effective
+        biomarkers for binary intelligibility classification. Experimental
+        results demonstrate that contextualized representations of specific
+        linguistic units yield superior classification accuracy compared
+        to approaches operating on full word- or utterance-level audio.
+        Significantly higher performance is observed on units most de-
+        graded by dysarthric impairment, validating the effectiveness of
+        the proposed fine-grained approach. Furthermore, the inclusion
         of synthetic data improves performance across various linguistic
         units, with the proposed pipeline effectively mitigating data
         scarcity issues.
