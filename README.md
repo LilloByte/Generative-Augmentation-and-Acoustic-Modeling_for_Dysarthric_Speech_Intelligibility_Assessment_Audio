@@ -1,1 +1,1 @@
-# Unveiling Acoustic Biomarkers for Dysarthria: A Framework using Generative Augmentation and Self-Supervised Representations (Audio Samples).
+#Assessing Dysarthric Speech Intelligibility via Generative Augmentation and Self-Supervised Linguistic Representations (Audio Samples).
